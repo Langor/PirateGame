@@ -22,34 +22,34 @@ public class MenuInGame : MonoBehaviour {
 					Time.timeScale = 1;
 				}
 				
-				if(GUI.Button(RectSave, "Save")){
-					gameObject.SendMessage("Save");//ищем в игровых объектах метод Save
-				}
+				//if(GUI.Button(RectSave, "Save")){
+				//	gameObject.SendMessage("Save");//ищем в игровых объектах метод Save
+				//}
 				
-				if(GUI.Button(RectLoad, "Load")){
-					gameObject.SendMessage("Load");//ищем метод Load
-				}
+				//if(GUI.Button(RectLoad, "Load")){
+				//	gameObject.SendMessage("Load");//ищем метод Load
+				//}
 				
-				if(GUI.Button(RectOptions, "Options")){
-					isOptions = true;
-				}
+				//if(GUI.Button(RectOptions, "Options")){
+				//	isOptions = true;
+				//}
 				
 				if(GUI.Button(RectQuit, "Quit")){
 					Application.LoadLevel("Scene1");
 				}
-			}
-			else{
-				if(GUI.Button(RectStart, "+")){ //прибавляем дистанцию теней
-					QualitySettings.shadowDistance = 10;
-				}
-				
-				if(GUI.Button(RectLoad, "-")){
-					QualitySettings.shadowDistance = 0;
-				}
-				
-				if(GUI.Button(RectQuit, "<<Back")){
-					isOptions = false;
-				}
+			//}
+			//else{
+			//	if(GUI.Button(RectStart, "+")){ //прибавляем дистанцию теней
+			//		QualitySettings.shadowDistance = 10;
+			//	}
+			//	
+			//	if(GUI.Button(RectLoad, "-")){
+			//		QualitySettings.shadowDistance = 0;
+			//	}
+			//	
+			//	if(GUI.Button(RectQuit, "<<Back")){
+			//		isOptions = false;
+			//	}
 			}
 		}
 	}

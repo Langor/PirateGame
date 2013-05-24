@@ -25,26 +25,26 @@ public class Menu : MonoBehaviour {
 			//	
 			//}
 			
-			if(GUI.Button(RectOptions, "Options")){
-				isOptions = true;
-			}
+			//if(GUI.Button(RectOptions, "Options")){
+			//	isOptions = true;
+			//}
 			
 			if(GUI.Button(RectQuit, "Quit")){
 				Application.Quit();
 			}
-		}
-		else{
-			if(GUI.Button(RectStart, "+")){ //прибавляем дистанцию теней
-				QualitySettings.shadowDistance = 10;
-			}
-			
-			if(GUI.Button(RectLoad, "-")){
-				QualitySettings.shadowDistance = 0;
-			}
-			
-			if(GUI.Button(RectQuit, "<<Back")){
-				isOptions = false;
-			}
+		//}
+		//else{
+		//	if(GUI.Button(RectStart, "+")){ //прибавляем дистанцию теней
+		//		QualitySettings.shadowDistance = 10;
+		//	}
+		//	
+		//	if(GUI.Button(RectLoad, "-")){
+		//		QualitySettings.shadowDistance = 0;
+		//	}
+		//	
+		//	if(GUI.Button(RectQuit, "<<Back")){
+		//		isOptions = false;
+		//	}
 		}
 	}
 	
